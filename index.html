@@ -1,18 +1,11 @@
 <!doctype html>
-<html ⚡ lang="en">
-<!--O raio identifica a página como conteúdo AMP, pode-se escrever apenas "amp" ao invés do "⚡"-->
+<html ⚡ lang="en"><!--O raio identifica a página como conteúdo AMP, pode-se escrever apenas "amp" ao invés do "⚡"-->
 
 <head>
-    <meta charset="utf-8">
-    <!--Requisito AMP-->
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!--Inclui e carrega a biblioteca JavaScript AMP-->
-    <script async src="index.js"></script>
-    <!--Pode incluir bibliotecas externas, porém devem ser async-->
-    <script type="application/json" src="dados.json"></script>
-    <!--Não é obrigatório porém é permitido-->
-    <script type="application/ld+json" src="info.json"></script>
-
+    <meta charset="utf-8">    <!--Requisito AMP-->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>    <!--Inclui e carrega a biblioteca JavaScript AMP-->
+       
+    
     <!--Deve conter o link para a página não-AMP e deve incluir o link comentado nela, para se referindo a essa página-->
     <!--ps: caso não tenha duas páginas (amp e não-amp) é só referir para ela mesmo-->
     <link rel="canonical" href="https://renatolobojr.github.io/my-amp-boilerplate/index.html">
@@ -23,6 +16,39 @@
 
     <meta name="viewport" content="width=device-width">
     <!--Requisito AMP-->
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": [
+              "logo.jpg"
+            ]
+        }
+    </script>
+
+    <script type="application/json">
+        [
+            {
+                "nome":"junior",
+                "telefone":"99181811"
+            },
+            {
+                "nome":"liliane",
+                "telefone":"99818474"
+            },
+            {
+                "nome":"renato",
+                "telefone":"88171618"
+            },
+            {
+                "nome":"aline",
+                "telefone":"99005511"
+            }
+        ]
+    </script>
 
     <style amp-boilerplate>
         body {
@@ -93,6 +119,8 @@
             }
         </style>
     </noscript>
+
+    <script async></script>
 
     <style amp-custom>
         /*Não se deve incluir arquivos externos como index.css, deve ser incluso nessa tag*/
