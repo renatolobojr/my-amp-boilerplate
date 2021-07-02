@@ -7,15 +7,15 @@
     <!--Requisito AMP-->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!--Inclui e carrega a biblioteca JavaScript AMP-->
-    <script async src="./index.js"></script>
+    <script async src="index.js"></script>
     <!--Pode incluir bibliotecas externas, porém devem ser async-->
-    <script type="application/json" src="./dados.json"></script>
+    <script type="application/json" src="dados.json"></script>
     <!--Não é obrigatório porém é permitido-->
-    <script type="application/ld+json" src="./info.json"></script>
+    <script type="application/ld+json" src="info.json"></script>
 
     <!--Deve conter o link para a página não-AMP e deve incluir o link comentado nela, para se referindo a essa página-->
     <!--ps: caso não tenha duas páginas (amp e não-amp) é só referir para ela mesmo-->
-    <link rel="canonical" href="http://127.0.0.1:5500/index.html">
+    <link rel="canonical" href="https://renatolobojr.github.io/my-amp-boilerplate/index.html">
     <!--link rel="amphtml" href="https://www.pagina-amp.com/"-->
 
     <link rel="shortcut icon" href="welcome.png" />
@@ -137,8 +137,8 @@
     <h1 id="hello">Welcome to the mobile web</h1>
 
     <!--amp-img deve conter height e width-->
-    <amp-img media="(max-width: 400px)" src="./welcome.jpg" alt="Welcome" layout="responsive" height="400" width="800"></amp-img> <br>
-    <amp-img media="(min-width: 401px)" src="./welcome.png" alt="Welcome" layout="fixed" height="200" width="400"></amp-img> <br>
+    <amp-img media="(max-width: 400px)" src="welcome.jpg" alt="Welcome" layout="responsive" height="400" width="800"></amp-img> <br>
+    <amp-img media="(min-width: 401px)" src="welcome.png" alt="Welcome" layout="fixed" height="200" width="400"></amp-img> <br>
 
     <button on="tap:hello.hide">
         botão x
