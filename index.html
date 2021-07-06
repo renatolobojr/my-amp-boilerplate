@@ -140,7 +140,7 @@
         sub,sup {  font-size: 75%;  line-height: 0;  position: relative;  vertical-align: baseline;}
         sub {  bottom: -0.25em;}
         sup {  top: -0.5em;}
-        img {  border-style: none;}
+        amp-img {  border-style: none; z-index:1;}
         button,input,optgroup,select,textarea {  font-family: inherit; /* 1 */  font-size: 100%; /* 1 */  line-height: 1.15; /* 1 */  margin: 0; /* 2 */}
         button,input { /* 1 */  overflow: visible;}
         button,select { /* 1 */  text-transform: none;}
@@ -269,7 +269,7 @@
 
         /*Personalização*/
         body{ background-color: #ffffff; }
-        header{  background-color: gray; position: fixed;width: 100%; top:0;left:0;;justify-content:space-between; display:flex;}
+        header{ z-index: 10; background-color: gray; position: fixed;width: 100%; top:0;left:0;;justify-content:space-between; display:flex;}
         .icon{padding: 35px ;text-decoration: none; display:inline-block; justify-content:space-around;}
         .navbar{text-decoration: none; display:inline-block; }
         .navbar-list{ list-style: none;  display:flex;}
